@@ -1,0 +1,136 @@
+{style}
+#ticket_title{
+	padding:3px;
+	text-align:center;
+	display:block;
+}
+#ticket{
+	width:75%;
+	display:block;
+}
+
+#ticket_text{
+	display:inline-block;
+	width:100%;
+	height:100%;
+	padding: 1px;
+}
+
+#ticket_text > p{
+	display:flex;
+	padding:1px;
+	max-height:100%;
+
+}
+
+.sc_ticksidebar{
+	display:block;
+	position:absolute;
+	right:10%;
+	border:1px solid #777777;
+	padding:5px;
+	max-height:100%;
+	background: #f5f5ff;
+	float:right;
+	max-width:180px!important;
+}
+
+.sc_ticksidebar_sticky{
+	position: fixed;
+	top: 21%;
+}
+.message-row{
+	display:block;
+	width:100%;
+	border-bottom: 2px solid white;
+}
+.message{
+	padding:10px;
+}
+.message_info{
+	display:block;
+	font-size:11.5px;
+	padding:2.5px;
+	background: #E8E8E8;
+	border-left: 1px solid cyan;
+}
+.mr_1 { border-left: 3px solid #FF5C5C;}
+.mr_2 { border-left: 3px solid #ED21FF;}
+.mr_3 { border-left: 3px solid #FFFF78;}
+
+{/style}
+{$menu}
+<div class="sc_ticksidebar" id="sc_ticksidebar">
+	<table class="ow_table_2">
+	<tr><th colspan="1">{text key="supportcenter+ticket_info_h"}</th></tr>
+	<tr class="{cycle values='ow_alt1, ow_alt2'}"><td>{text key="supportcenter+started_by"}: <a href="{$url_user}">{$ticket.author}</a></td></tr>
+	<tr class="{cycle values='ow_alt1, ow_alt2'}"><td>{text key="supportcenter+created"}: {format_date timestamp=$ticket.created}</td></tr>
+	<tr class="{cycle values='ow_alt1, ow_alt2'}"><td>{text key="supportcenter+department_label_info"}: {$departments}</td></tr>
+	<tr class="{cycle values='ow_alt1, ow_alt2'}"><td>{text key="supportcenter+last_update_info"}: {format_date timestamp=$ticket.updated}</td></tr>
+	<tr class="{cycle values='ow_alt1, ow_alt2'}"><td>
+	{if $ticket.requested_deletion != "0"}
+	{text key="supportcenter+deletion_r"}
+	{/if}
+	<a href="{$url_delete}">{text key="supportcenter+delete"}</a>
+	</td>
+	</tr>
+	<tr class="{cycle values='ow_alt1, ow_alt2'}"><td style="font-size:11.5px;">
+	{text key="supportcenter+email_notifs_notice"}</td></tr>
+	</table>
+</div>
+<div id="ticket">
+<div style="background-color:#f8f8ff;">
+
+<div id="ticket_title"><strong>{text key="supportcenter+ticket"}: {$ticket.subject}</strong></div>
+<br>
+<div id="ticket_text" style="background-color:#f5f5ff;border-bottom: 2px white solid;">
+{$ticket.text}
+<div class="message_info">{text key="supportcenter+created_by"} {$ticket.author} {format_date timestamp=$ticket.created}<br>Last updated {format_date timestamp=$ticket.updated}</div>
+</div>
+
+{foreach from=$messages item="message"}
+<div class="message-row">
+
+<div class="message {cycle values='mr_1, mr_2, mr_3'}">{$message.text}</div>
+<div class="message_info">{text key="supportcenter+posted_by"} {$message.author} {format_date timestamp=$message.created}</div>
+</div>
+{/foreach}
+
+</div>
+
+	{form name="supportcenter_form_ticket_reply"}
+            {block_decorator name='box' iconClass='ow_ic_write' langLabel="supportcenter+form_ticket_reply_submit" addClass='ow_stdmargin'}
+                {input name="text" class="ow_smallmargin"}
+                {error name="text"}<br />
+                <div class="clearfix"><div class="ow_right">{submit name="submit" class='ow_positive'}</div></div>
+            {/block_decorator}
+        {/form}
+
+
+</div>
+
+
+
+<hr />
+<span class="ow_button">
+<input type="submit" class="ow_button" onclick="location.href='{$url_back}'" value='{text key="supportcenter+back"}' />
+</span>
+
+{script}
+{literal}
+
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("sc_ticksidebar");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    header.classList.add("sc_ticksidebar_sticky");
+  } else {
+    header.classList.remove("sc_ticksidebar_sticky");
+  }
+}
+
+{/literal}
+{/script}

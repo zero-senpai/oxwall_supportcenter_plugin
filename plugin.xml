@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<plugin>
+	<name>Support Center+</name>
+	<key>supportcenter</key>
+	<description>Fully-fledged Support Center with Ticket system and Knowledgebase system. Mobile Support and Front-end Management.</description>
+	<author>Jake Brunton</author>
+	<authorEmail>jbtech.business@gmail.com</authorEmail>
+	<authorUrl>https://jake-brunton.tumblr.com</authorUrl>
+	<developerKey>b8a2870e3c177d26e7cb1b7fb5d2b314</developerKey>
+	<build>95</build>
+	<copyright>Jake Brunton, 2018-2019</copyright>
+	<license>OSCL</license>
+	<licenseUrl>http://www.oxwall.org/store/oscl</licenseUrl>
+</plugin>
+

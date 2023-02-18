@@ -1,0 +1,76 @@
+{style}
+a.tag{
+	display:inline-block;
+	padding:4px;
+	border-radius: 10%;
+	border: 1px solid;
+	background-color: #808080;
+	color: #fdfdfd;
+	text-decoration:none;
+	font-size: 12px;
+}
+.tag:hover{
+	background-color: #ADADAD;
+}
+{/style}
+{$menu}
+<div class="clearfix">
+	<div class="ow_column ow_right" style="width: 35%;">
+		{block_decorator name="box" iconClass="ow_ic_tag" label=$browse_tag_label}
+		<div>
+		
+		{if empty($tags)}
+			<tr class="{cycle values='ow_alt1, ow_alt2'} {if $smarty.foreach.item.first}ow_tr_first{/if}{if $smarty.foreach.item.last}ow_tr_last{/if}">
+			<td style="width: 90%;">{text key="supportcenter+no_tags_yet"}</td></tr>{/if}
+		{foreach from=$tags item="tag"}
+           <a class="tag" href="{$tag.url_view}">{$tag.text}</a> &nbsp;
+		{/foreach}
+
+		</div>
+		{/block_decorator}
+		{form name="supportcenter_form_order"}
+		<table class="ow_table_1 ow_form ow_stdmargin"><tbody>
+			<tr class="ow_tr_first ow_alt1">
+				<td class="ow_label">{label name="order"}</td>
+				<td class="ow_value">{input name="order"}</td>
+			</tr>
+			<tr>
+				<td class="ow_desc ow_small" colspan="2">
+					{submit name="submit"}
+			</td>
+			</tr>
+			</tbody></table>
+			{/form}
+	</div>
+    <div class="ow_column ow_left">
+
+        {block_decorator name="box_cap" type='empty' iconClass="ow_ic_monitor" label=$knowledge_lbl}
+	{/block_decorator}
+
+        <table class="ow_table_2">
+
+		{if empty($items)}
+			<tr class="{cycle values='ow_alt1, ow_alt2'} {if $smarty.foreach.item.first}ow_tr_first{/if}{if $smarty.foreach.item.last}ow_tr_last{/if}">
+			<td style="width: 90%;"><div class="ow_left ow_txtleft">{text key="supportcenter+no_articles_yet"}</div></td></tr>
+		{/if}
+
+	        {foreach from=$items item="item"}
+            <tr class="{cycle values='ow_alt1, ow_alt2'} {if $smarty.foreach.item.first}ow_tr_first{/if}{if $smarty.foreach.item.last}ow_tr_last{/if}">
+                <td style="width: 90%;">
+                    <div class="ow_left ow_txtleft">
+		        		<a href="{$item.url_view}">{$item.text}</a>
+                    </div>
+                </td>
+        </tr>
+	        {/foreach}
+    </table>
+
+
+
+<span class="ow_button">
+<input type="submit" class="ow_button" onclick="location.href='{$url_back}'" value='{text key="supportcenter+back"}' />
+</span>
+
+	</div>
+</div>
+

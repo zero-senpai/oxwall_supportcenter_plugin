@@ -1,0 +1,87 @@
+
+{$menu}
+<div class="clearfix support_page">
+	{if $searchguard == "FALSE"}
+	{form name="supportcenter_form_search"}
+	<div class="support_search">
+      <table class="ow_form ow_automargin" style="margin: 20px;">
+            <tr>
+                <td class="ow_value ow_valign_middle search_td">{input name='text' class='search_field'}<br />{error name='text'}</td>
+                <td class="ow_submit ow_valign_middle">{submit name='submit'}</td>
+            </tr>
+        </table>
+	</div>
+	{/form}{/if}
+	{if $searchguard == "TRUE"}
+		<div class="support_search">
+      <table class="ow_form ow_automargin" style="margin: 20px;">
+            <tr>
+                <td class="ow_value ow_valign_middle search_td">{text key="supportcenter+sign_in_to_use"}</td>
+                
+            </tr>
+        </table>
+	</div>
+	{/if}
+    <div class="ow_column ow_right" style="width:35%;">
+	{block_decorator name="box" iconClass="ow_ic_tag" label=$welcome}
+		<div>{$welcome_msg}</div>
+	{/block_decorator}
+	{if $help_forum_con == 'TRUE'}
+	{block_decorator name="box" iconClass="ow_ic_forum" label=$community_help}
+		<div>{$hf_promo}</div>
+	{/block_decorator}
+	{/if}
+	{if $f == 'TRUE'}
+	{block_decorator name="box" iconClass="ow_ic_info" label=$faq_label}
+		<div><a href="{$url_faq}">{text key="supportcenter+viewfaq"}</a></div>
+	{/block_decorator}{/if}
+	{if $authcheck == 'TRUE'}
+        {block_decorator name="box" iconClass="ow_ic_tag" label=$text_article_menu}
+	<table class="ow_table_1">
+	<tr class="ow_alt1" >
+	<td><a href="{$url_ticket_new}">{text key="supportcenter+submit_ticket"}</a></td></tr>
+	<tr class="ow_alt1" >
+	<td><a href="{$url_ticket_my}">{text key="supportcenter+my_tickets"}</a></td>
+	</tr>
+	</table>
+        {/block_decorator}{/if}
+	{if $authcheck == 'FALSE'}
+		{block_decorator name="box" iconClass="ow_ic_tag" label=$text_article_menu}
+		<table class = "ow_table_1">
+		<tr class="ow_alt1"><td>{text key="supportcenter+sign_in_to_use"}</td></tr>
+	</table>
+		{/block_decorator}{/if}
+
+    </div>
+    <div class="ow_column" style="width:63%;">
+
+
+        {block_decorator name="box" iconClass="ow_ic_edit" label=$top_articles}
+
+        <table class="ow_table_2">
+	        {foreach from=$top_articles_list item="item"}
+            <tr class="{cycle values='ow_alt1, ow_alt2'} {if $smarty.foreach.item.first}ow_tr_first{/if}{if $smarty.foreach.item.last}ow_tr_last{/if}">
+                <td style="width: 85%;">
+                    <div class="ow_left ow_txtleft">
+		        	<a href="{$item.url_view}">{$item.title}</a>
+                    </div>
+                </td>
+        </tr>
+	        {/foreach}
+		<tr class="ow_tr_last ow_right">
+			<td><a href="{$url_knowledgebase}">{text key="supportcenter+all_articles"}</a></td>
+		</tr>
+	</table>
+
+        {/block_decorator}
+
+
+    </div>
+
+
+
+</div>
+
+
+
+

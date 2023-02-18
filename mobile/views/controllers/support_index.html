@@ -1,0 +1,84 @@
+{style}
+table{
+	margin:0 auto!important;
+}
+
+{/style}
+
+<div class="clearfix owm_align_center">
+    <!--<div class="ow_column ow_left">-->
+		{if $searchguard == 'FALSE'}
+        {block_decorator name="box" iconClass="ow_ic_edit" label=$text_articles}
+        {form name="supportcenter_form_search"}
+        <table class="ow_form ow_automargin owm_tab_info">
+            <tr>
+                <td class="ow_label" style="width:10%">{label name='text' }</td>
+                <td class="ow_value invitation" style="vertical-align:middle!important;">{input name='text' style="width:100%;" }<br />{error name='text'}</td>
+                <td class="ow_submit owm_btn_wide">{submit name='submit'}</td>
+            </tr>
+        </table>
+        {/form}
+        {/block_decorator}{/if}
+		
+		{if $searchguard == 'TRUE'}
+        {block_decorator name="box" iconClass="ow_ic_edit" label=$text_articles}
+        <table class="ow_form ow_automargin owm_tab_info">
+            <tr>
+                <td class="ow_value invitation" style="vertical-align:middle!important;">{text key="supportcenter+sign_in_to_use"}</td>
+            </tr>
+        </table>
+        {/block_decorator}{/if}
+		
+        {block_decorator name="box" iconClass="ow_ic_edit" label=$top_articles}
+
+        <table class="owm_tab_info">
+	        {foreach from=$top_articles_list item="item"}
+            <tr class="{cycle values='ow_alt1, ow_alt2'} {if $smarty.foreach.item.first}ow_tr_first{/if}{if $smarty.foreach.item.last}ow_tr_last{/if} owm_current_membership owm_membersip_item owm_border">
+                <td style="width: 100%;" class="owm_sidemenu_item_wrap owm_bg_color_1">
+                    
+		        	<a href="{$item.url_view}" class="owm_sidemenu_item clearfix"><span class="owm_sidemenu_item_label owm_float_left">{$item.title}</span></a>
+                    
+                </td>
+        </tr>
+	        {/foreach}
+		<tr class="owm_current_membership owm_membersip_item owm_border"><td class="owm_sidemenu_item_wrap owm_bg_color_1" style="background:#A6A6A6!important;"><a href="{$url_knowledgebase}" class="owm_sidemenu_item clearfix"><span class="owm_sidemenu_item_label owm_float_left">All Articles</span></a></td></tr>
+	</table>
+
+        {/block_decorator}
+
+		{if $authcheck == 'TRUE'}
+        {block_decorator name="box" iconClass="ow_ic_tag" label=$text_article_menu}
+
+	<table class="owm_tab_info">
+	<tr class="ow_alt1 owm_current_membership owm_membersip_item owm_border">
+	<td class="owm_sidemenu_item_wrap owm_bg_color_1"><a href="{$url_ticket_new}" class="owm_sidemenu_item clearfix"><span class="owm_sidemenu_item_label owm_float_left">{text key="supportcenter+submit_ticket"}</span></a></td></tr>
+	<tr class="ow_alt1 owm_current_membership owm_membersip_item owm_border">
+	<td class="owm_sidemenu_item_wrap owm_bg_color_2"><a href="{$url_ticket_my}" class="owm_sidemenu_item clearfix"><span class="owm_sidemenu_item_label owm_float_left">{text key="supportcenter+my_tickets"}</span></a></td>
+	</tr>
+	</table>
+
+        {/block_decorator}{/if}
+		
+		{if $authcheck == 'FALSE'}
+		{block_decorator name="box" iconClass="ow_ic_tag" label=$text_article_menu}
+	<table class="owm_tab_info">
+	<tr class="ow_alt1 owm_current_membership owm_membersip_item owm_border">
+	<td class="owm_sidemenu_item_wrap owm_bg_color_2"><spanclass="owm_sidemenu_item clearfix"><span class="owm_sidemenu_item_label owm_float_left">{text key="supportcenter+sign_in_to_use"}</span></span></td>
+	</tr>
+	</table>
+	{/block_decorator}{/if}
+	
+	{if $f == 'TRUE'}
+	{block_decorator name="box" iconClass="ow_ic_info" label=$faq_label}
+			<table class="owm_tab_info">
+	<tr class="ow_alt1 owm_current_membership owm_membersip_item owm_border">
+	<td class="owm_sidemenu_item_wrap owm_bg_color_1"><a href="{$url_faq}" class="owm_sidemenu_item clearfix"><span class="owm_sidemenu_item_label owm_float_left">{text key="supportcenter+viewfaq"}</span></a></td></tr>
+	</table>
+	{/block_decorator}{/if}
+
+
+</div>
+
+
+
+

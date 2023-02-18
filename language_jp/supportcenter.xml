@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="supportcenter" label="Support Center" language_tag="jp" language_label="日本語">
+	<key name="auth_group_label"><value>Support Center</value></key>
+	<key name="auth_action_label_manage"><value>Allow use of Support Manager</value></key>
+	<key name="support"><value>サポート</value></key>
+	<key name="support_title"><value>サポートセンター</value></key>
+	<key name="support_heading"><value>サポートセンター</value></key>
+
+	<key name="are_you_sure"><value>本気ですか？</value></key>
+	<key name="edit"><value>編集</value></key>
+	<key name="delete"><value>削除</value></key>
+
+	<key name="tag_add"><value>新しいタグを追加する</value></key>
+	<key name="tag_list"><value>タグリスト</value></key>
+
+	<key name="article_add"><value>新しい記事</value></key>
+	<key name="article_list"><value>記事一覧</value></key>
+
+	<key name="category_add"><value>カテゴリを追加</value></key>
+	<key name="category_list"><value>カテゴリリスト</value></key>
+
+	<key name="department_add"><value>部門を追加する</value></key>
+	<key name="department_list"><value>部門リスト</value></key>
+
+	<key name="department_user_add"><value>ユーザーを追加する</value></key>
+	<key name="department_user_list"><value>ユーザーリスト</value></key>
+
+	<key name="department_ticket_list"><value>切符売場</value></key>
+	<key name="ticket"><value>チケット</value></key>
+	<key name="no_tickets"><value>チケットはありません</value></key>
+
+	<key name="ticket_list"><value>チケット一覧</value></key>
+	<key name="support-mobile"><value>サポートセンター</value></key>
+	<key name="status"><value>状態</value></key>
+
+	<key name="form_add_tag"><value>タグ付けする</value></key>
+	<key name="form_add_category"><value>カテゴリを追加</value></key>
+	<key name="form_add_department"><value>部門を追加する</value></key>
+	<key name="form_add_tag_submit"><value>提出する</value></key>
+	<key name="form_edit_tag"><value>新しいテキスト</value></key>
+	<key name="form_article_title"><value>表題</value></key>
+	<key name="form_article_body"><value>身</value></key>
+	<key name="form_article_cat1"><value>カテゴリ1</value></key>
+	<key name="form_article_cat2"><value>カテゴリ2</value></key>
+	<key name="form_search"><value>探索</value></key>
+
+	<key name="form_new_ticket_subject"><value>件名</value></key>
+	<key name="form_new_ticket_text"><value>描写</value></key>
+	<key name="form_new_ticket_category"><value>カテゴリー</value></key>
+	<key name="form_new_ticket_department"><value>部門</value></key>
+	<key name="form_new_ticket_submit"><value>提出する</value></key>
+
+	<key name="form_ticket_reply_text"><value>チケットに返信する</value></key>
+	<key name="form_ticket_reply_submit"><value>応答</value></key>
+
+	<key name="form_settings_menu_pos"><value>メニュー位置</value></key>
+	<key name="menu_pos_info"><value>メニュー項目の位置を設定します。</value></key>
+	<key name="form_settings_email_notif"><value>電子メール通知</value></key>
+	<key name="email_notif_info"><value>電子メール通知をオンまたはオフにします。 管理者またはユーザーがチケットに応答すると、オンサイト通知の横に電子メール通知が表示されます。 &lt;a href="{$site_url}admin/settings/languages?prefix=supportcenter"&gt;ここで電子メールメッセージを編集する&lt;/a&gt;</value></key>
+	<key name="form_add_department_user"><value>ユーザーを追加する</value></key>
+	<key name="user_not_found"><value>ユーザーが見つかりません</value></key>
+
+	<key name="admin_general"><value>一般設定</value></key>
+	<key name="admin_tags"><value>荷札</value></key>
+	<key name="admin_articles"><value>箇条</value></key>
+	<key name="admin_settings_heading"><value>サポートセンターの設定</value></key>
+	<key name="admin_ticket_categories"><value>チケットカテゴリ</value></key>
+	<key name="admin_tickets"><value>切符売場</value></key>
+	<key name="admin_departments"><value>部署</value></key>
+
+	<key name="notification_section_label"><value>サポートセンター</value></key>
+	<key name="notification_ticket_updated"><value>チケットが更新されました</value></key>
+	<key name="ticket_notification"><value>チケットが更新されました: {$content}</value></key>
+	<key name="ticket_notification_new"><value>チケットが作成されました: {$content}</value></key>
+	<key name="support_manage_title"><value>サポート| サポートマネージャー</value></key>
+	<key name="support_manage_heading"><value>サポートマネージャー</value></key>
+	<key name="support_manage_description"><value>承認されたモデレーターは、管理パネルでサポートチケットを管理できます。</value></key>
+	<key name="admin_jbtech"><value>助けて</value></key>
+	<key name="jbtech_heading"><value>JBTech | プレミアムサポート</value></key>
+	<key name="jbtech_title"><value>JBTech | プラグインのヘルプ</value></key>
+	<key name="manage_ticket_general"><value>切符売場</value></key>
+	<key name="manage_ticket_article"><value>箇条</value></key>
+	<key name="email_notif_update_body"><value>挨拶 {$username}&#44; &lt;br/&gt;&lt;br/&gt;
+	チケット &#34;&lt;b&gt;{$tick_name}&lt;/b&gt;&#34; に返信しました {$site_name}. &lt;a href="{$tick_link}"&gt;ここをクリックしてください。&lt;/a&gt;&#13;&#13;
+	&lt;br/&gt; &lt;br/&gt;
+	よろしくお願いします。
+	</value></key>
+	<key name="email_notif_update_txt"><value>挨拶 {$username}&#44; &lt;br/&gt;&lt;br/&gt;
+	チケット &#34;&lt;b&gt;{$tick_name}&lt;/b&gt;&#34; に返信しました {$site_name}. &lt;a href="{$tick_link}"&gt;ここをクリックしてください。&lt;/a&gt;&#13;&#13;
+	&lt;br/&gt; &lt;br/&gt;
+	よろしくお願いします。
+	</value></key>
+	<key name="email_ticket_notification"><value>{$site_name} | チケットが更新されました</value></key>
+	<key name="started_by"><value>開始した</value></key>
+	<key name="ticket_info_h"><value>チケット情報</value></key>
+	<key name="created"><value>作成した</value></key>
+	<key name="department_label_info"><value>部門</value></key>
+	<key name="last_update_info"><value>最後の更新</value></key>
+	<key name="email_notifs_notice"><value>管理者が電子メール通知をオンにしている場合、処理には少し時間がかかることがあります。 お待ちください。</value></key>
+	
+	<key name="welcome_support_center"><value>{$username} ようこそ! 私たちのサポートセンターは、{$site_name} に関するあらゆる問題や質問をお手伝いします。.</value></key>
+	<key name="share_this_article"><value>記事を共有</value></key>
+	<key name="share_to"><value>共有先：</value></key>
+	<key name="knowledgebase"><value>知識ベース</value></key>
+	<key name="my_tickets"><value>私のチケット</value></key>
+	<key name="help_forum"><value>私たちのコミュニティからのサポートについては、&lt;a href="{$help_forum_url}"&gt;Help Forum&lt;/a&gt; をご覧ください。</value></key>
+	<key name="form_settings_help_forum"><value>ヘルプフォーラム</value></key>
+	<key name="admin_help_forum_desc"><value>オンの場合、メインページにヘルプフォーラムへのプロモーションリンクが表示されます。 URLを設定する必要があります。</value></key>
+	<key name="form_settings_help_forum_url"><value>ヘルプフォーラムのURL</value></key>
+	<key name="admin_help_forum_url_desc"><value>ヘルプフォーラムにリンクするURL</value></key>
+	<key name="form_settings_article_shares"><value>記事の共有</value></key>
+	<key name="admin_article_shares_desc"><value>ナレッジベースの記事をソーシャルメディアで共有できるようにする</value></key>
+	<key name="form_settings_recommended_art"><value>おすすめの記事</value></key>
+	<key name="admin_recommended_art_desc"><value>ONの場合、記事ページに複数の記事が表示され、推奨タグと同じタグが表示されます。</value></key>
+	<key name="all_articles"><value>すべての記事</value></key>
+	<key name="community_help"><value>コミュニティヘルプ</value></key>
+	<key name="browse_by_tag"><value>タグでブラウズ</value></key>
+	
+	<key name="submit_ticket"><value>チケットを提出する</value></key>
+	<key name="form_search_placeholder"><value>ヘルプ記事を検索</value></key>
+	<key name="back"><value>裏面</value></key>
+	<key name="cancel"><value>取消</value></key>
+	<key name="request_d"><value>削除をリクエストする</value></key>
+	<key name="deletion_r"><value>削除が要求されました。</value></key>
+	<key name="deletion_r_mobile"><value>削除が要求されました。 タップしてキャンセルします。</value></key>
+	<key name="posted_by"><value>投稿者</value></key>
+	<key name="created_by"><value>創造主</value></key>
+	<key name="view"><value>眺める</value></key>
+	<key name="delete"><value>削除</value></key>
+	<key name="rate_art"><value>この記事を評価する</value></key>
+	<key name="no_recs"><value>類似の記事は見つかりませんでした。</value></key>
+	<key name="no_articles_yet"><value>まだ記事がありません。</value></key>
+	<key name="no_tags_yet"><value>タグなし</value></key>
+	<key name="no_results"><value>結果がありません、別の検索を試してください</value></key>
+	<key name="search_header"><value>結果</value></key>
+	<key name="articles_with"><value>Articles with tag {$tag}</value></key>
+	<key name="admin_korder_desc"><value>ナレッジベースリストに設定するデフォルトのオーダーを選択します（ユーザーは独自のオーダーを選択できます）</value></key>
+	<key name="form_settings_korder"><value>知識ベースの注文</value></key>
+	<key name="form_settings_korder_alpha"><value>アルファベット順</value></key>
+	<key name="form_settings_korder_date"><value>最も最近の</value></key>
+	<key name="form_settings_korder_top"><value>トップレート</value></key>
+	<key name="ordering_by"><value>注文</value></key>
+
+</prefix>

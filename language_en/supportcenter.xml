@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<prefix name="supportcenter" label="Support Center" language_tag="en" language_label="English">
+	<key name="auth_group_label"><value>Support Center</value></key>
+	<key name="auth_action_label_manage"><value>Allow use of Support Manager</value></key>
+	<key name="auth_action_label_use_tickets"><value>Members can use the Tickets feature</value></key>
+	<key name="support"><value>Support</value></key>
+	<key name="support_title"><value>Support Center</value></key>
+	<key name="support_heading"><value>Support Center</value></key>
+
+	<key name="are_you_sure"><value>Are you sure?</value></key>
+	<key name="edit"><value>Edit</value></key>
+	<key name="delete"><value>Delete</value></key>
+
+	<key name="tag_add"><value>Add Tag</value></key>
+	<key name="tag_list"><value>Tag list</value></key>
+
+	<key name="article_add"><value>New Article</value></key>
+	<key name="article_list"><value>Article list</value></key>
+
+	<key name="category_add"><value>Add Category</value></key>
+	<key name="category_list"><value>Category list</value></key>
+
+	<key name="department_add"><value>Add Department</value></key>
+	<key name="department_list"><value>Department list</value></key>
+
+	<key name="department_user_add"><value>Add User</value></key>
+	<key name="department_user_list"><value>Staff List</value></key>
+
+	<key name="department_ticket_list"><value>Tickets</value></key>
+	<key name="top_articles_label"><value>Top Articles</value></key>
+	<key name="ticket"><value>Ticket</value></key>
+	<key name="no_tickets"><value>No tickets</value></key>
+
+	<key name="ticket_list"><value>Ticket list</value></key>
+	<key name="support-mobile"><value>Support Center</value></key>
+	<key name="status"><value>Status</value></key>
+
+	<key name="form_add_tag"><value>Add Tag</value></key>
+	<key name="form_add_category"><value>Add Category</value></key>
+	<key name="form_add_department"><value>Add Department</value></key>
+	<key name="form_add_tag_submit"><value>Submit</value></key>
+	<key name="form_edit_tag"><value>New Text</value></key>
+	<key name="form_article_title"><value>Title</value></key>
+	<key name="form_article_body"><value>Body</value></key>
+	<key name="form_article_cat1"><value>Category 1</value></key>
+	<key name="form_article_cat2"><value>Category 2</value></key>
+	<key name="form_search"><value>Search</value></key>
+
+	<key name="form_new_ticket_subject"><value>Subject</value></key>
+	<key name="form_new_ticket_text"><value>Description</value></key>
+	<key name="form_new_ticket_category"><value>Category</value></key>
+	<key name="form_new_ticket_department"><value>Department</value></key>
+	<key name="form_new_ticket_submit"><value>Submit</value></key>
+
+	<key name="form_ticket_reply_text"><value>Reply on Ticket</value></key>
+	<key name="form_ticket_reply_submit"><value>Reply</value></key>
+
+	<key name="form_settings_menu_pos"><value>Menu Position</value></key>
+	<key name="menu_pos_info"><value>Set the location of the Menu Item.</value></key>
+	<key name="form_settings_email_notif"><value>Email Notifications</value></key>
+	<key name="email_notif_info"><value>Turn Email Notifications on or off. When a Admin or User replies to a ticket, the user will receive an Email notification along side the onsite notification. &lt;a href="{$site_url}admin/settings/languages?prefix=supportcenter"&gt;Edit the Email Message Here&lt;/a&gt;</value></key>
+	<key name="form_add_department_user"><value>Add User</value></key>
+	<key name="user_not_found"><value>User not found</value></key>
+	<key name="user_add_department"><value>User Added</value></key>
+
+	<key name="admin_general"><value>Settings</value></key>
+	<key name="admin_tags"><value>Tags</value></key>
+	<key name="admin_articles"><value>Articles</value></key>
+	<key name="admin_settings_heading"><value>Support Center Settings</value></key>
+	<key name="admin_ticket_categories"><value>Ticket Categories</value></key>
+	<key name="admin_tickets"><value>Tickets</value></key>
+	<key name="admin_departments"><value>Departments</value></key>
+
+	<key name="notification_section_label"><value>Support Center</value></key>
+	<key name="notification_ticket_updated"><value>Ticket updated</value></key>
+	<key name="ticket_notification"><value>Ticket updated: {$content}</value></key>
+	<key name="ticket_notification_new"><value>Ticket created: {$content}</value></key>
+	<key name="support_manage_title"><value>Support | Support Manager</value></key>
+	<key name="support_manage_heading"><value>Support Manager</value></key>
+	<key name="support_manage_description"><value>Approved mods can manage support tickets off of Admin panel.</value></key>
+	<key name="admin_jbtech"><value>Help</value></key>
+	<key name="jbtech_heading"><value>JBTech | Premium Support</value></key>
+	<key name="jbtech_title"><value>JBTech | Plugin Help</value></key>
+	<key name="manage_ticket_general"><value>Tickets</value></key>
+	<key name="manage_ticket_article"><value>Articles</value></key>
+	<key name="email_notif_update_body"><value>Dear {$username}&#44; &lt;br/&gt;&lt;br/&gt;
+	Your ticket &#34;&lt;b&gt;{$tick_name}&lt;/b&gt;&#34; has been replied to on {$site_name}. &lt;a href="{$tick_link}"&gt;View here&lt;/a&gt;&#13;&#13;
+	&lt;br/&gt; &lt;br/&gt;
+	Sincerely, Support Staff.
+	</value></key>
+	<key name="email_notif_update_txt"><value>Dear {$username}&#44; &lt;br/&gt;&lt;br/&gt;
+	Your ticket &#34;&lt;b&gt;{$tick_name}&lt;/b&gt;&#34; has been replied to on {$site_name}. &lt;a href="{$tick_link}"&gt;View here&lt;/a&gt;&#13;&#13;
+	&lt;br/&gt; &lt;br/&gt;
+	Sincerely, Support Staff.
+	</value></key>
+	<key name="email_ticket_notification"><value>{$site_name} | Ticket Updated</value></key>
+	<key name="started_by"><value>Started by</value></key>
+	<key name="ticket_info_h"><value>Ticket Info</value></key>
+	<key name="created"><value>Created</value></key>
+	<key name="department_label_info"><value>Department</value></key>
+	<key name="last_update_info"><value>Last updated</value></key>
+	<key name="email_notifs_notice"><value>If Admin has Email Notifications on, your reply may take a moment to process. Please wait.</value></key>
+	
+	<key name="welcome_support_center"><value>Welcome {$username}. Our Support Center is here to help you with any problems or questions you may have regarding {$site_name}.</value></key>
+	<key name="share_this_article"><value>Share Article</value></key>
+	<key name="share_to"><value>Share to:</value></key>
+	<key name="knowledgebase"><value>Knowledgebase</value></key>
+	<key name="my_tickets"><value>My Tickets</value></key>
+	<key name="help_forum"><value>Visit our &lt;a href="{$help_forum_url}"&gt;Help Forum&lt;/a&gt; for support from our community.</value></key>
+	<key name="form_settings_help_forum"><value>Help Forum</value></key>
+	<key name="admin_help_forum_desc"><value>If on, will display a promo link to a Help Forum on main page. Must set the URL for it to work.</value></key>
+	<key name="form_settings_help_forum_url"><value>Help Forum URL</value></key>
+	<key name="admin_help_forum_url_desc"><value>URL to link to your Help Forum</value></key>
+	<key name="form_settings_article_shares"><value>Article Sharing</value></key>
+	<key name="admin_article_shares_desc"><value>Allow Knowledgebase Articles to be shared on Social Media</value></key>
+	<key name="form_settings_recommended_art"><value>Recommended Articles</value></key>
+	<key name="admin_recommended_art_desc"><value>If ON, will show several articles on the article page with the same tag as recommendations.</value></key>
+	<key name="all_articles"><value>All Articles</value></key>
+	<key name="community_help"><value>Community Help</value></key>
+	<key name="browse_by_tag"><value>Browse by Tag</value></key>
+	
+	<key name="submit_ticket"><value>Submit a Ticket</value></key>
+	<key name="form_search_placeholder"><value>Search Knowledgebase</value></key>
+	<key name="back"><value>Back</value></key>
+	<key name="cancel"><value>Cancel</value></key>
+	<key name="request_d"><value>Request Deletion</value></key>
+	<key name="deletion_r"><value>Deletion requested.</value></key>
+	<key name="deletion_r_mobile"><value>Deletion requested. Tap to cancel.</value></key>
+	<key name="posted_by"><value>Posted by</value></key>
+	<key name="created_by"><value>Created by</value></key>
+	<key name="view"><value>View</value></key>
+	<key name="delete"><value>Delete</value></key>
+	<key name="rate_art"><value>Rate this Article</value></key>
+	<key name="no_recs"><value>No similar articles found</value></key>
+	<key name="no_articles_yet"><value>No Articles Yet.</value></key>
+	<key name="no_tags_yet"><value>No tags</value></key>
+	<key name="no_results"><value>No results, please try a different search</value></key>
+	<key name="search_header"><value>Search Results</value></key>
+	<key name="articles_with"><value>Articles with tag {$tag}</value></key>
+	<key name="admin_korder_desc"><value>Choose the default Order to set for the Knowledgebase List (User can choose their own order)</value></key>
+	<key name="form_settings_korder"><value>Knowledgebase Order</value></key>
+	<key name="form_settings_korder_alpha"><value>Alphabetically</value></key>
+	<key name="form_settings_korder_date"><value>Most Recent</value></key>
+	<key name="form_settings_korder_top"><value>Top Rated</value></key>
+	<key name="ordering_by"><value>Ordering by</value></key>
+	<key name="guest"><value>Guest</value></key>
+
+	<key name="no_users"><value>No Users</value></key>
+	<key name="add_dep_user"><value>Username</value></key>
+	<key name="add_dep_user_ph"><value>Insert Username</value></key>
+	<key name="added_to_department_label"><value>Added to Department</value></key>
+	<key name="added_to_department"><value>You have been added as a Staff member of the {$content} Department.</value></key>
+	
+	<key name="insufficient_perm"><value>Insufficient Permissions</value></key>
+	<key name="upgrade_membership"><value>You must upgrade your membership to use that feature.</value></key>
+	<key name="form_settings_k_members"><value>Knowledgebase Perms</value></key>
+	<key name="form_settings_k_members_all"><value>All</value></key>
+	<key name="form_settings_k_members_mems"><value>Members Only</value></key>
+	<key name="admin_k_members_desc"><value>Set if all guests can access the Knowledgebase, or just your site members.</value></key>
+	<key name="sign_in"><value>Please sign in.</value></key>
+	<key name="sign_in_to_use"><value>Please sign-in to use this feature.</value></key>
+	
+	<key name="tickets_and_articles"><value>Tickets &amp; Articles</value></key>
+	<key name="auto_purge"><value>Auto Purge</value></key>
+	<key name="form_settings_faq_toggle"><value>FAQ</value></key>
+	<key name="admin_faq_toggle_desc"><value>Turns the FAQ feature on or off. You can edit your questions by clicking "FAQ" in the menu.</value></key>
+	<key name="form_settings_ticket_info_p"><value>Ticket Info Position</value></key>
+	<key name="admin_ticket_position_desc"><value>Set the position of the "Ticket Info" bar. Useful if you have a theme with a Sidebar.</value></key>
+	<key name="form_settings_ticket_info_p_side"><value>Side (Default)</value></key>
+	<key name="form_settings_ticket_info_p_top"><value>Static Above</value></key>
+	<key name="form_settings_auto_purge"><value>Auto Purge</value></key>
+	<key name="admin_auto_purge_desc "><value>Turn Auto Purge on/off. If On; a cron job will use your Purge Limit to delete tickets that are that old automatically.</value></key>
+	<key name="form_settings_purge_limit"><value>Purge Limit</value></key>
+	<key name="admin_purge_limit_desc "><value>The length of time a ticket has before Auto Purge deletes it from the database. Will not take effect if Auto Purge is off.</value></key>
+	<key name="form_settings_purge_limit_1week"><value>1 Week</value></key>
+	<key name="form_settings_purge_limit_3months"><value>3 Months</value></key>
+	<key name="form_settings_purge_limit_6months"><value>6 Months</value></key>
+	<key name="settings_updated"><value>Settings Successfully Updated</value></key>
+	<key name="not_available"><value>Sorry, this page is unavailable.</value></key>
+	
+	<key name="admin_faq"><value>FAQ</value></key>
+	<key name="faq_added"><value>FAQ Entry Added</value></key>
+	<key name="faq_deleted"><value>FAQ Entry Deleted</value></key>
+	<key name="faq_updated"><value>FAQ Entry Updated</value></key>
+	<key name="faq_moved"><value>FAQ Entry Position has Changed</value></key>
+	<key name="moveup"><value>Move Up</value></key>
+	<key name="movedown"><value>Move Down</value></key>
+	<key name="faq_question"><value>Question</value></key>
+	<key name="faq_answer"><value>Answer</value></key>
+	<key name="faq_answer_inv"><value>Write the answer to the question here.</value></key>
+	<key name="faq"><value>F.A.Q</value></key>
+	<key name="viewfaq"><value>View our F.A.Q</value></key>
+	<key name="faq_title"><value>F.A.Q</value></key>
+	<key name="faq_desc"><value>Check out our frequently asked questions for quick support.</value></key>
+	<key name="manual_purge"><value>Manual Purge</value></key>
+	<key name="manual_purge_desc"><value>If your cron isn't working properly, you may wish to manually run the purge function. Choose an option and click submit to purge tickets. The option you choose will be the set value. e.g: 1 week means delete ALL tickets older than 1 week.</value></key>
+	<key name="purge_confirm"><value>This will delete ALL tickets that meet the criteria. Continue?</value></key>
+	<key name="tickets_deleted"><value>Tickets have been successfully deleted.</value></key>
+	<key name="date"><value>Updated</value></key>
+	<key name="user_already_in_dep"><value>User is already assigned a department.</value></key>
+	<key name="no_department_assigned"><value>You are not assigned a department! Contact Administration.</value></key>
+	<key name="support-mobile-faq"><value>F.A.Q</value></key>
+</prefix>

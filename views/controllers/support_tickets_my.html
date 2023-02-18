@@ -1,0 +1,32 @@
+{$menu}
+<div class="clearfix">
+    <div class="ow_column ow_left">
+
+        {block_decorator name="box_cap" type='empty' iconClass="ow_ic_monitor" langLabel="supportcenter+my_tickets"}
+	{/block_decorator}
+
+	{if empty($items)}
+		<tr class="{cycle values='ow_alt1, ow_alt2'} {if $smarty.foreach.item.first}ow_tr_first{/if}{if $smarty.foreach.item.last}ow_tr_last{/if} ow_center">
+		<td style="width: 90%;"><div>{text key="supportcenter+no_tickets"}</div></td></tr>
+	{/if}
+
+        <table class="ow_table_2 ow_center">
+	        {foreach from=$items item="item"}
+            <tr class="{cycle values='ow_alt1, ow_alt2'} {if $smarty.foreach.item.first}ow_tr_first{/if}{if $smarty.foreach.item.last}ow_tr_last{/if}">
+                <td>
+		        		<a href="{$item.url_view}">{$item.text}</a>
+                </td>
+				<td>
+					<a href="{$item.url_view}">{text key="supportcenter+view"}</a>
+				</td>
+        </tr>
+	        {/foreach}
+    </table>
+
+<span class="ow_button">
+<input type="submit" class="ow_button" onclick="location.href='{$url_back}'" value='{text key="supportcenter+back"}' />
+</span>
+
+	</div>
+</div>
+

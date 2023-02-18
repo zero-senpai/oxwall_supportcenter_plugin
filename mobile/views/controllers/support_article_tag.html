@@ -1,0 +1,38 @@
+{style}
+table{
+	width:100%;
+	margin:0 auto!important;
+}
+
+#pad{
+	padding-top:5px;
+	padding-bottom:10px;
+}
+
+{/style}
+<div class="clearfix owm_align_center">
+	<div id="pad">
+        {block_decorator name="box_cap" type='empty' iconClass="ow_ic_monitor" label="$tag"}
+	{/block_decorator}</div>
+
+        <table class="owm_tab_info">
+	        {foreach from=$items item="item"}
+            <tr class="{cycle values='ow_alt1, ow_alt2'} {if $smarty.foreach.item.first}ow_tr_first{/if}{if $smarty.foreach.item.last}ow_tr_last{/if} owm_current_membership owm_membersip_item owm_border">
+                <td class="owm_sidemenu_item_wrap owm_bg_color_1">
+		        		<a href="{$item.url_view}" class="owm_sidemenu_item clearfix"><span class="owm_sidemenu_item_label owm_float_left">{$item.text}</span></a>
+                </td>
+        </tr>
+	        {/foreach}
+    </table>
+
+
+<br><br>
+<div class="owm_current_membership owm_membersip_item owm_border">
+<div class="owm_sidemenu_item_wrap owm_bg_color_1">
+<a href="{$url_back}" class="owm_sidemenu_item clearfix"><span class="owm_sidemenu_item_label owm_float_left">{text key="supportcenter+back"}</span></a>
+
+	</div>
+</div>
+
+</div>
+

@@ -1,0 +1,12 @@
+div.support_left {
+	width:50%;
+	float:left;
+}
+div.support_right {
+	width:50%;
+	float:left;
+}
+
+#ticket_title{
+	padding:5px;
+}

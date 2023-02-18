@@ -1,0 +1,76 @@
+{style}
+.faq li { padding: 20px; }
+
+.faq li.q {
+  background: #4FC2E;
+  font-weight: bold;
+  font-size: 120%;
+  border-bottom: 1px #ddd solid;
+  cursor: pointer;
+}
+
+.faq li.a {
+  background: #4568a0;
+  display: none;
+  color:#fff;
+}
+{/style}
+
+<div>
+	<div>
+	{block_decorator name="box" iconClass="ow_ic_edit" label=$faq_label}
+			<div class="faq_list">
+				{foreach from=$faqs item="faq"}
+					<ul class="faq">
+						<li class="q">
+							&middot; {$faq.question}
+						</li>
+						<li class="a">
+							{$faq.answer}
+						</li>
+					</ul>
+				{/foreach}
+			</div>
+		{/block_decorator}
+	</div>
+</div><br>
+<div class="owm_current_membership owm_membersip_item owm_border">
+<div class="owm_sidemenu_item_wrap owm_bg_color_1">
+<a href="{$url_back}" class="owm_sidemenu_item clearfix"><span class="owm_sidemenu_item_label owm_float_left">{text key="supportcenter+back"}</span></a>
+
+	</div>
+</div>
+
+{literal}
+<script>
+// Accordian Action
+var action = 'click';
+var speed = "500";
+
+
+$(document).ready(function(){
+
+// Question handler
+  $('li.q').on(action, function(){
+
+    // gets next element
+    // opens .a of selected question
+    $(this).next().slideToggle(speed)
+    
+    // selects all other answers and slides up any open answer
+    .siblings('li.a').slideUp();
+  
+    // Grab img from clicked question
+    var img = $(this).children('img');
+
+    // remove Rotate class from all images except the active
+    $('img').not(img).removeClass('rotate');
+
+    // toggle rotate class
+    img.toggleClass('rotate');
+
+  });
+
+});
+</script>
+{/literal}

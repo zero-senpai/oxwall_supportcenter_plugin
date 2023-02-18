@@ -1,0 +1,28 @@
+{$menu}
+
+{form name="supportcenter_form_faq"}
+
+<table class="ow_table_1 ow_form ow_stdmargin"><tbody>
+
+<tr class="ow_tr_first ow_alt1">
+    <td class="ow_label">{label name="question"}</td>
+    <td class="ow_value">{input name="question"}</td>
+</tr>
+<tr class="ow_tr_first ow_alt2">
+    <td class="ow_label">{label name="answer"}</td>
+    <td class="ow_value">{input name="answer"}</td>
+</tr>
+
+
+<tr>
+    <td class="ow_desc ow_small">
+	{submit name="submit"}
+    </td>
+</tr>
+</tbody>
+</table>
+{/form}
+
+<span class="ow_button">
+<input type="submit" class="ow_button" onclick="location.href='{$url_cancel}'" value='{text key="supportcenter+cancel"}' />
+</span>

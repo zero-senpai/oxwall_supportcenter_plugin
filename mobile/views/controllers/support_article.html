@@ -1,0 +1,47 @@
+{style}
+.art_title{
+	font-weight:bold;
+	font-size:19.5px;
+}
+
+table{
+	margin:0 auto!important;
+	width:100%;
+}
+
+a.tag{
+	display:inline-block;
+	padding:4px;
+	border-radius: 10%;
+	border: 1px solid;
+	background-color: #808080;
+	color: #fdfdfd;
+	text-decoration:none;
+	font-size: 12px;
+}
+.tag:hover{
+	background-color: #ADADAD;
+}
+
+{/style}
+<table class="owm_tab_info">
+<tr class="art_title"><td>{$article.title}</td></tr>
+<tr><td class="main_bod">{$article.body}</td></tr>
+</table>
+<hr>
+<table class="owm_tab_info">
+<tr><td>{text key="supportcenter+rate_art"}: 
+<div id="rate" class="rating">&nbsp;</div></td></tr>
+<tr><td>{text key="supportcenter+admin_tags"}: 
+{foreach  from=$tags item="tag"}
+<a href="tag/{$tag.id}" class="tag">{$tag.text}</a>
+{/foreach}
+</td></tr>
+</table>
+<br>
+<div class="owm_current_membership owm_membersip_item owm_border">
+<div class="owm_sidemenu_item_wrap owm_bg_color_1">
+<a href="{$url_back}" class="owm_sidemenu_item clearfix"><span class="owm_sidemenu_item_label owm_float_left">{text key="supportcenter+back"}</span></a>
+
+	</div>
+</div>

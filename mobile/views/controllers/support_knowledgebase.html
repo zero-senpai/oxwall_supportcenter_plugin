@@ -1,0 +1,71 @@
+{style}
+table{
+	width:100%;
+	margin:0 auto!important;
+}
+a.tag{
+	display:inline-block;
+	padding:4px;
+	border-radius: 10%;
+	border: 1px solid;
+	background-color: #808080;
+	color: #fdfdfd;
+	text-decoration:none;
+	font-size: 12px;
+}
+.tag:hover{
+	background-color: #ADADAD;
+}
+{/style}
+	
+	<div class="clearfix owm_align_center">	
+	{block_decorator name="box" iconClass="ow_ic_tag" label=$browse_tag_label}
+		<table class="owm_tab_info">
+		
+		{if empty($tags)}
+			<tr>
+			<td>{text key="supportcenter+no_tags_yet"}</td></tr>{/if}
+		{foreach from=$tags item="tag"}
+           <a class="tag" href="{$tag.url_view}">{$tag.text}</a> &nbsp;
+		{/foreach}
+
+		</table>{/block_decorator}
+		{form name="supportcenter_form_order"}
+		<table class="owm_tab_info" style="padding-bottom:55px;">
+		<tr><td class="ow_label">{label name="order"}</td>
+							   <td class="ow_value">{input name="order"}</td>
+							  </tr>
+		<tr><td class="ow_desc ow_small" colspan="2">{submit name="submit"}</td></tr>
+		</table>
+	{/form}
+
+		
+
+        <table class="owm_tab_info">
+
+		{if empty($items)}
+			<tr class="{cycle values='ow_alt1, ow_alt2'} {if $smarty.foreach.item.first}ow_tr_first{/if}{if $smarty.foreach.item.last}ow_tr_last{/if}">
+			<td style="width: 90%;"><div class="ow_left ow_txtleft">{text key="supportcenter+no_articles_yet"}</div></td></tr>
+		{/if}
+
+	        {foreach from=$items item="item"}
+            <tr class="{cycle values='ow_alt1, ow_alt2'} {if $smarty.foreach.item.first}ow_tr_first{/if}{if $smarty.foreach.item.last}ow_tr_last{/if} ow_alt1 owm_current_membership owm_membersip_item owm_border">
+                <td class="owm_sidemenu_item_wrap owm_bg_color_1">
+		        		<a href="{$item.url_view}" class="owm_sidemenu_item clearfix"><span class="owm_sidemenu_item_label owm_float_left">{$item.text}</span></a>
+                </td>
+        </tr>
+	        {/foreach}
+    </table>
+	
+
+<br><br>
+<div class="owm_current_membership owm_membersip_item owm_border">
+<div class="owm_sidemenu_item_wrap owm_bg_color_1">
+<a href="{$url_back}" class="owm_sidemenu_item clearfix"><span class="owm_sidemenu_item_label owm_float_left">{text key="supportcenter+back"}</span></a>
+
+	</div>
+</div>
+
+</div>
+
+

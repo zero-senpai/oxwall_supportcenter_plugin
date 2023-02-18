@@ -1,0 +1,135 @@
+div.support_left {
+	width:50%;
+	float:left;
+}
+div.support_right {
+	width:50%;
+	float:left;
+}
+
+div#ticket_title{	padding:3px;	text-align:center;	display:block;}
+
+div#ticket{	width:75%;	display:block;}
+
+.sc_ticksidebar{	display:block;	position:absolute;	right:14%;	border:1px solid #777777;	padding:5px;	max-height:100%;	background: #f5f5ff;	float:right;max-width:183px;}
+
+.sc_ticksidebar_m{	display:none;	width:90%;	text-align:center;	margin:0 auto!important;}
+
+#ticket_text{
+	display:inline-block;
+	width:100%;
+	padding: 1px;
+}
+
+#ticket_text > p{
+	display:flex;
+	padding:1px;
+	max-height:100%;
+
+}
+@media screen and (max-width: 980px){	
+	.sc_ticksidebar{		display:none;	}	
+	.sc_ticksidebar_m{		display:block;	}	
+	#ticket{		width:100%;	}
+}
+	
+.sc_ticksidebar_sticky{	position: fixed;	top:21%;}
+.message-row{	display:block;	width:100%;	border-bottom: 2px solid white;}
+.message{	padding:10px;}
+.message_info{	display:block;	font-size:11.5px;	padding:2.5px;	background: #E8E8E8;	border-left: 1px solid cyan;}
+.mr_1 { border-left: 3px solid #FF5C5C;}.mr_2 { border-left: 3px solid #ED21FF;}
+.mr_3 { border-left: 3px solid #FFFF78;}
+
+/* Articles Styles */
+
+.title{
+	font-size:20px;
+}
+
+a.tag{
+	display:inline-block;
+	padding:4px;
+	border-radius: 10%;
+	border: 1px solid;
+	background-color: #808080;
+	color: #fdfdfd;
+	text-decoration:none;
+	font-size: 12px;
+}
+.tag:hover{
+	background-color: #ADADAD;
+}
+a.sharecta{
+	display:inline-block;
+	float:right;
+	padding:5px;
+	background-color: #8ADEFF;
+	color: #fdfdfd;
+	text-decoration:none!important;
+	font-size:15.5px;
+}
+
+.article{
+	display: inline-block;
+	width: 74%;
+}
+
+@media only screen and (max-width:980px){
+	.article{
+		width: 99%;
+	}
+	a.sharecta{
+		float:none;
+	}
+}
+
+/* FAQ */
+
+.faq li { padding: 20px; }
+
+.faq li.q {
+  background: #4FC2E;
+  font-weight: bold;
+  font-size: 120%;
+  border-bottom: 1px #ddd solid;
+  cursor: pointer;
+}
+
+.faq li.a {
+  background: #4568a0;
+  display: none;
+  color:#fff;
+}
+
+/* Support Center Main Page */
+
+.support_page{
+	display:block;
+	width:100%;
+	padding:1px;
+}
+
+.support_search{
+	display:inline-block;
+	width:100%;
+	text-align:center;
+	background: #DEDEDE;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-bottom: 1px solid #000;
+	margin-bottom: 10px;
+	height: 85px;
+}
+.search_td{
+	width:100%!important;
+}
+
+.search_field{
+	width: 100%!important;
+	padding:5px;
+}
+
+/* Knowledge base Page */
+
+
+
